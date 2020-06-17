@@ -7,7 +7,7 @@ pipeline {
       stage('Build') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/simul91/fleetman-position-tracker'
+            git 'https://github.com/simul91/fleetman-webapp'
 
             // Run Maven on a Unix agent.
             sh "mvn package"
